@@ -1,18 +1,31 @@
+/* Import the custom Fortnite font */
+@font-face {
+    font-family: 'Burbank Big Condensed';
+    src: url('assets/fonts/BurbankBigCondensed-Bold.otf') format('opentype');
+}
+
+/* General body styling */
 body {
     font-family: 'Burbank Big Condensed', sans-serif;
-    background: url('assets/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+    background: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light grey text color for readability */
     margin: 0;
     padding: 0;
 }
 
+/* Header styling */
 header {
-    background: #1c1c1c;
+    background: #000000; /* Black background for header */
     padding: 20px;
     text-align: center;
+    border-bottom: 2px solid #00aaff; /* Baby blue border */
 }
 
+header h1 {
+    color: #00aaff; /* Baby blue color for header text */
+}
+
+/* Navigation styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -24,17 +37,38 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffd700;
+    color: #00aaff; /* Baby blue color for links */
     text-decoration: none;
 }
 
-h1, h2 {
-    font-family: 'Burbank Big Condensed', sans-serif;
-    color: #ffd700;
+nav ul li a:hover {
+    color: #f0f0f0; /* Light grey color on hover */
 }
 
+/* Section and main content styling */
+main {
+    padding: 20px;
+}
+
+section {
+    background: #333333; /* Dark grey background for sections */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #00aaff; /* Baby blue color for section titles */
+}
+
+/* Footer styling */
 footer {
-    background: #1c1c1c;
+    background: #000000; /* Black background for footer */
     padding: 10px;
     text-align: center;
+    border-top: 2px solid #00aaff; /* Baby blue border */
+}
+
+footer p {
+    color: #f0f0f0; /* Light grey text color */
 }
